@@ -1,0 +1,332 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f4f7fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+header {
+    text-align: center;
+    padding: 60px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #7c3aed
+    );
+
+    color: white;
+}
+
+header h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 19px;
+    color: #e0e7ff;
+}
+
+
+nav {
+    text-align: center;
+    background: white;
+    padding: 18px 10px;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+nav a {
+    text-decoration: none;
+    color: #374151;
+
+    font-weight: 600;
+
+    margin: 0 10px;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section {
+    background: white;
+
+    margin-bottom: 30px;
+    padding: 35px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.07);
+
+    transition: 0.3s;
+}
+
+section:hover {
+    transform: translateY(-3px);
+}
+
+
+section h2 {
+    color: #1e3a8a;
+
+    font-size: 30px;
+
+    margin-bottom: 25px;
+
+    padding-bottom: 10px;
+
+    border-bottom: 3px solid #2563eb;
+}
+
+
+#about {
+    text-align: center;
+}
+
+#about img {
+    width: 180px;
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 6px solid #dbeafe;
+
+    margin-bottom: 20px;
+
+    box-shadow:
+        0 8px 25px rgba(37, 99, 235, 0.2);
+}
+
+#about p {
+    max-width: 700px;
+    margin: auto;
+
+    color: #6b7280;
+
+    font-size: 17px;
+}
+
+#education h3 {
+    color: #2563eb;
+
+    margin-top: 20px;
+    margin-bottom: 5px;
+
+    font-size: 20px;
+}
+
+#education h3:first-of-type {
+    margin-top: 0;
+}
+
+#education p {
+    color: #6b7280;
+
+    padding-left: 15px;
+
+    border-left: 3px solid #93c5fd;
+}
+
+#skills ul {
+    list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 12px;
+}
+
+#skills li {
+    background: #dbeafe;
+
+    color: #1d4ed8;
+
+    padding: 10px 18px;
+
+    border-radius: 25px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+#skills li:hover {
+    background: #2563eb;
+    color: white;
+
+    transform: translateY(-3px);
+}
+
+#hobbies ul {
+    list-style: none;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 12px;
+}
+
+#hobbies li {
+    background: #f5f3ff;
+
+    color: #6d28d9;
+
+    padding: 13px 18px;
+
+    border-radius: 10px;
+
+    font-weight: 500;
+
+    border-left: 4px solid #7c3aed;
+
+    transition: 0.3s;
+}
+
+#hobbies li:hover {
+    background: #ede9fe;
+
+    transform: translateX(5px);
+}
+
+#contact p {
+    margin: 15px 0;
+
+    color: #555;
+}
+
+#contact a {
+    color: #2563eb;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+#contact a:hover {
+    color: #7c3aed;
+
+    text-decoration: underline;
+}
+
+
+hr {
+    display: none;
+}
+footer {
+    text-align: center;
+
+    background: #111827;
+
+    color: white;
+
+    padding: 30px 20px;
+
+    margin-top: 40px;
+}
+
+footer p {
+    color: #9ca3af;
+
+    font-size: 14px;
+}
+@media (max-width: 700px) {
+
+    header {
+        padding: 45px 15px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    nav {
+        padding: 15px 8px;
+    }
+
+    nav a {
+        display: inline-block;
+
+        margin: 5px 7px;
+
+        font-size: 14px;
+    }
+
+    main {
+        margin: 25px auto;
+        padding: 0 12px;
+    }
+
+    section {
+        padding: 25px 20px;
+    }
+
+    section h2 {
+        font-size: 25px;
+    }
+
+    #about img {
+        width: 150px;
+        height: 150px;
+    }
+
+    #hobbies ul {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 400px) {
+
+    header h1 {
+        font-size: 27px;
+    }
+
+    nav a {
+        margin: 4px;
+        font-size: 13px;
+    }
+
+    section {
+        padding: 22px 15px;
+    }
+
+    #skills li {
+        font-size: 14px;
+        padding: 8px 14px;
+    }
+}
+```
